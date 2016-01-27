@@ -30,6 +30,7 @@
          "requires" : {
             "Encode" : "0",
             "Getopt::Long" : "0",
+            "IO::Pager::Buffered" : "0",
             "Term::ANSIColor" : "0",
             "Web::Query::LibXML" : "0",
             "perl" : "5.008005",

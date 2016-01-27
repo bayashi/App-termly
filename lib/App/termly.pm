@@ -16,7 +16,7 @@ sub run {
     my $config = {};
     _merge_opt($config, @argv);
 
-    my $token = IO::Pager::Buffered::open *STDOUT;
+    IO::Pager::Buffered::open *STDOUT;
 
     _main($config);
 }
