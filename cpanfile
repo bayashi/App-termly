@@ -5,6 +5,7 @@ requires 'Getopt::Long';
 requires 'Encode';
 requires 'Web::Query::LibXML';
 requires 'Term::ANSIColor';
+requires 'IO::Pager::Buffered';
 
 on 'test' => sub {
     requires 'Test::More', '0.88';

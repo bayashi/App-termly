@@ -5,6 +5,7 @@ use Getopt::Long qw/GetOptionsFromArray/;
 use Encode qw/encode_utf8/;
 use Web::Query::LibXML;
 use Term::ANSIColor;
+use IO::Pager::Buffered;
 
 our $VERSION = '0.01';
 
@@ -14,6 +15,8 @@ sub run {
 
     my $config = {};
     _merge_opt($config, @argv);
+
+    my $token = IO::Pager::Buffered::open *STDOUT;
 
     _main($config);
 }
