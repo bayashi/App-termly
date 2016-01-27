@@ -1,7 +1,10 @@
 requires 'perl', '5.008005';
 requires 'strict';
 requires 'warnings';
-requires 'Carp';
+requires 'Getopt::Long';
+requires 'Encode';
+requires 'Web::Query::LibXML';
+requires 'Term::ANSIColor';
 
 on 'test' => sub {
     requires 'Test::More', '0.88';

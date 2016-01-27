@@ -7,6 +7,7 @@ my $builder = Module::Build::Pluggable->new(
     module_name         => 'App::termly',
     license             => 'perl',
     dist_author         => 'Dai Okabayashi <bayashi@cpan.org>',
+    script_files        => [ 'script/termly' ],
     dist_version_from   => 'lib/App/termly.pm',
     add_to_cleanup      => [ 'App-termly-*' ],
     meta_merge     => {

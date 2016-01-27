@@ -1,0 +1,38 @@
+#!perl
+use strict;
+use warnings;
+use App::termly;
+
+App::termly->run(@ARGV);
+
+__END__
+
+=head1 NAME
+
+termly - The CLI Interface for http://term.ly/
+
+=head1 SYNOPSIS
+
+    $ termly WORD
+
+=head2 OPTIONS
+
+    -h,  --help          show this help
+    -v,  --version       show the version
+
+=head1 AUTHOR
+
+Dai Okabayashi E<lt>bayashi@cpan.orgE<gt>
+
+
+=head1 SEE ALSO
+
+L<http://term.ly/>
+
+
+=head1 LICENSE
+
+This module is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself. See L<perlartistic>.
+
+=cut
